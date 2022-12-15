@@ -1,0 +1,274 @@
+/*font-family: 'Roboto', sans-serif;
+● Paleta de colores
+Amarillo: #EAC926;
+Azul: #03264C;
+Celeste: #1259c3;
+Gris oscuro: #666;
+Gris claro: #ebebeb;
+Verde: #39b54a;
+
+● Tamaños Tipográficos
+Cuerpos de texto: 12px
+Titulares (Basado en tu última visita/Ofertas): 24px
+Precios: 18px
+Descuentos: 16px
+Descripciones: 16px
+
+● Navegación en tablets (ancho mínimo 361 px)
+● Navegación en desktop (ancho mínimo 769 px)*/
+
+/* HEADER */
+
+header{
+    font-family: 'Roboto', sans-serif;
+    background-color: #EAC926;
+    width: 100%;
+    padding: 0;
+}
+
+.flex-logo{
+    display: flex;
+    position: relative;
+}
+
+.logo{
+    width: 50%;
+}
+
+.barra-busqueda{
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    position: absolute;
+    box-sizing: border-box;
+    bottom: 0;
+    right: 5px;
+}
+
+.icono-busqueda{
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+}
+
+.lema{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.flex-nav{
+    display: block;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+.icon-header{
+    padding-left: 5px;
+    font-size: 15px;
+}
+
+.center-burguer{
+    text-align: center;
+    width: 100%;
+    padding-bottom: 4px;
+}
+
+.burguer{
+    text-align: center;
+    background-color: #1259c3;
+    padding: 1%;
+    border-radius: 25%;
+    font-size: 25px;
+}
+
+.banner{
+    width: 100%;
+}
+
+/* MAIN */
+
+main{
+    font-family: 'Roboto', sans-serif;
+    background-color:#ebebeb;
+    width: 100%;
+    padding: 0;
+}
+
+.flex-desktop{
+    display: block;
+}
+
+.ult-visita{
+    font-size: 24px;
+    padding-left: 5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-weight: bold;
+}
+
+.separacion{
+    padding: 3%;
+}
+
+.caja-foto{
+    text-align: center;
+    width: 100%;
+}
+
+.foto{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+.caja-descripcion{
+    position: relative;
+    width: 90%;
+    box-sizing: border-box;
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+    margin: auto;
+    background-color: white;
+}
+
+.flex-desc{
+    display: flex;
+}
+
+.precio{
+    padding-right: 1%;
+    font-weight: 800;
+    font-size: 18px;
+}
+
+.off{
+    color: #39b54a;
+    font-weight: 800;
+    font-size: 80%;
+    font-size: 18px;
+}
+
+.producto{
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.icon-truck:hover{
+    animation-direction: alternate;
+    transform: rotate(-360deg);
+    transition: ease-out(10%);
+}
+
+.icon-truck{
+    color: green;
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 30px;
+    top: -15px;
+    box-sizing: border-box;
+    transition: all 1s;
+}
+
+/*FOOTER*/
+
+footer{
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+    width: 100%;
+    padding: 0;
+}
+
+.icon-footer{
+    padding-top: 2%;
+    padding-bottom: 1%;
+    color: #1259c3;
+    font-size: 40px;
+}
+
+.center-footer{
+    text-align: center;
+}
+
+.texto{
+    font-weight: bolder;
+}
+
+.copy{
+    padding-top: 5%;
+    padding-left: 1%;
+    padding-bottom: 1%;
+    font-weight: 500;
+    font-size: small;
+}
+
+/* OCULTO */
+
+.oculto{
+    display: none;
+}
+
+.oculto-tablet{
+    display: block;
+}
+
+.oculto-dektop{
+    display: none;
+}
+
+/* OCULTO TABLETS */
+
+@media(min-width: 376px){
+
+    .oculto{
+        display: block;
+    }
+
+    .oculto-tablet{
+        display: none;
+    }
+
+    .foto{
+        box-shadow: 0px 3px 4px 0px rgba(0,0,0,0.5);
+    }
+
+    .caja-descripcion{
+        box-shadow: 0px 3px 4px 0px rgba(0,0,0,0.5);
+    }
+
+    .barra-busqueda{
+        font-size: medium;
+    }
+}
+
+
+/* DESKTOP */
+@media(min-width: 769px){
+
+    .oculto-dektop{
+        display: block;
+    }
+
+    .flex-desktop{
+        display: flex;
+    }
+
+    .flex-nav{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        font-weight: bold;
+    }
+
+    .barra-busqueda{
+        font-size: 25px ;
+    }
+
+}

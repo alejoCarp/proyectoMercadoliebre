@@ -1,0 +1,31 @@
+/* MAIN */
+.register{
+    width: 50%;
+    position: relative;
+    left: 25%;
+    padding: 2%;
+}
+
+.control{
+    padding-bottom: 2%;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+}
+
+.interes{
+    display: flex;
+    font-weight: bold;
+    flex-direction: column;
+}
+
+div div{
+    padding-top: 1%;
+}
+
+.bottom{
+    width: auto;
+    padding: 1%;
+    background-color: #fcf67e;
+    font-weight: bolder;
+}
